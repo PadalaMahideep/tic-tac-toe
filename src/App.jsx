@@ -128,13 +128,16 @@ function App() {
 
   return (
     <div className="app">
+      <h2>
+        TIC <span className="text-green">TAC</span> TOE
+      </h2>
       <Statusmessage winner={winner} gamingBoard={gamingBoard} />
       <Board
         squares={gamingBoard.squares}
         handleSquares={handleSquares}
         winningSquares={winningSquares}
       />
-      <h2 style={{ fontWeight: 'normal', color: 'black' }}>
+      <h2 style={{ fontWeight: 'normal', color: 'white' }}>
         current game history
       </h2>
       <button
